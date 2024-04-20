@@ -43,7 +43,7 @@ def pre_process_text(text):
 
 model = SentenceTransformer('bert-base-nli-mean-tokens')
 
-df = pd.read_csv("../arxiv_results.csv", names = ["id", "title", "summary"])
+df = pd.read_csv("https://github.com/ZacharySoo01/I320D_TextMining-NLP_FinalProject/blob/main/arxiv_results.csv", names = ["id", "title", "summary"])
 df = df.drop(df.columns[0], axis=1)
 df = df.drop(0, axis=0)
 
