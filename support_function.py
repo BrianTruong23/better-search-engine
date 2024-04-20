@@ -9,7 +9,7 @@ def encode_query(query):
     return model.encode(query)
 
 def get_df():
-    df = pd.read_csv("https://github.com/ZacharySoo01/I320D_TextMining-NLP_FinalProject/blob/main/arxiv_results.csv", names = ["id", "title", "summary"])
+    df = pd.read_csv("https://raw.githubusercontent.com/ZacharySoo01/I320D_TextMining-NLP_FinalProject/main/arxiv_results.csv", names = ["id", "title", "summary"])
     df = df.drop(df.columns[0], axis=1)
     df = df.drop(0, axis=0)
     return df
